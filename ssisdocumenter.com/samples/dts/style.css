@@ -1,0 +1,144 @@
+BODY {
+	scrollbar-face-color:#D8D8D8;
+	scrollbar-highlight-color:#E6E6E6;
+	scrollbar-3dlight-color:#C0C0C0;
+	scrollbar-darkshadow-color:#8B8B8B;
+	scrollbar-shadow-color:#A7A7A7;
+	scrollbar-arrow-color:#335271;
+	scrollbar-track-color:#C8C8C8;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: #ffffff; 
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	width: 100%;         
+}
+
+.head{
+	align: left;
+	margin: 0px 0px 0px 0px;
+	padding: 2px 0px 0px 4px;
+	vertical-align: middle;
+	font-weight: normal;
+	background: transparent; 
+}
+
+.button{
+	width: 10px;
+	cursor: hand;
+	background: transparent; 
+}
+
+div#header{
+	background-color: #B1CB9A;
+}
+
+.smallhead{
+	align: left;
+	margin: 0px 0px 0px 0px;
+	padding: 2px 0px 0px 4px;
+	vertical-align: middle;
+	font-weight: normal;
+	font-size: 70%;
+	font-style: italic;
+	background: transparent; 
+}
+
+.code{
+	font-size : 10pt;
+	font-weight: normal;
+	font-family :"Courier New";
+	color :"#3333FF";
+}
+
+table.list{
+	width: 95%; 
+	margin-top: .6em;
+	margin-bottom: .3em;
+	margin-left: 1em;	
+	border-width: 1px 0px 0px 1px;
+	border-style: solid;
+	border-color: #999999;
+	font-size: 100%;
+
+}
+
+th{
+	background: #cccccc; 
+	border-width: 0px 1px 1px 0px;
+	border-style: solid;
+	border-color: #999999;
+	padding: 4px 4px;
+	text-align: left;
+	vertical-align: top;
+	font-size: 100%;
+}
+td.label{
+	font-family :"Arial";
+	font-weight:"bold";
+	font-size: 100%; 
+}
+td.value{
+	font-family :"Courier New";
+
+}
+
+td.greenhead{
+	font-family :"Courier New";
+	border-width: 0px 0px 0px 0px;
+	align: left;
+	margin: 0px 0px 0px 0px;
+	padding: 2px 0px 0px 4px;
+	vertical-align: middle;
+	font-weight: normal;
+	font-size: 70%;
+	font-style: italic;
+	background: transparent; 
+}
+
+td{
+	background:"White"; 
+	font-size: 100%;
+	border-width: 0px 1px 1px 0px;
+	border-style: solid;
+	border-color: #999999;
+	vertical-align: top;
+}
+
+h1, h2, h3, h4
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom: .4em; 
+	margin-top: 1em;
+	margin-left: 1em;
+	}
+h1
+	{
+	font-size: 130%;
+	margin-top: 0em;
+	font-weight: bold;
+	}
+h2
+	{
+	font-size: 120%;
+	font-weight: bold;
+	}
+h3
+	{
+	font-size: 90%;
+	font-style: italic;
+	}
+h4
+	{
+	font-size: 80%;
+	align: left;
+	margin-left: 0.3em;
+	}
+h5
+	{
+	font-size: 70%;
+	align: left;
+	margin-left: 0.3em;
+	font-style: italic;
+	}

@@ -1,0 +1,21 @@
+Hello Christophe,
+
+Thank you for using DTS Documenter.
+Please install SQL Server Service Pack 4 to the
+workstation where DTS Documenter is installed.
+
+Note: in order to install Service Pack the you should install the SQL Server Client tools on this workstation.
+
+The Service Pack cna be obtained from the following location:
+
+http://www.microsoft.com/downloads/details.aspx?FamilyId=8E2DFC8D-C20E-4446-99A9-B7F0213F8BC5&displaylang=en
+
+
+The message refer to the internal DTS path format microsoft is using and not the destination path.
+
+
+Please let us know, if this resolved the issue.
+
+Thanks and have a great day.
+Softrus Support
+Email:support@soft-r-us.com

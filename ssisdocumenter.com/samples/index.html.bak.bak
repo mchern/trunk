@@ -1,0 +1,45 @@
+
+<html >
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <LINK REL="STYLESHEET" TYPE="text/css" HREF="Styles/style.css" title="Style">
+    <title>SSIS Documentation</title>
+<script type="text/javascript">
+function url(u)
+{
+ document.getElementById('cframe').src=u;
+}
+</script>
+ </head>
+  <body>
+    <div id="main1">
+<table class="contents" width="100%" height="97%" cellspacing="0" cellpadding="0">
+<tr>
+<td  class="contents">
+<div class="contents">
+<h2>SSIS Packages</h2>
+<ul>
+<li><a href="#" onclick="url('Lesson 1.dtsx.html')"  alt="c:\Work\ssis\Samples2012\doc\Lesson 1.dtsx.html">Lesson 1.dtsx</a></li>
+<li><a href="#" onclick="url('Lesson 2.dtsx.html')"  alt="c:\Work\ssis\Samples2012\doc\Lesson 2.dtsx.html">Lesson 2.dtsx</a></li>
+<li><a href="#" onclick="url('Lesson 3.dtsx.html')"  alt="c:\Work\ssis\Samples2012\doc\Lesson 3.dtsx.html">Lesson 3.dtsx</a></li>
+<li><a href="#" onclick="url('Lesson 4.dtsx.html')"  alt="c:\Work\ssis\Samples2012\doc\Lesson 4.dtsx.html">Lesson 4.dtsx</a></li>
+<li><a href="#" onclick="url('Lesson 5.dtsx.html')"  alt="c:\Work\ssis\Samples2012\doc\Lesson 5.dtsx.html">Lesson 5.dtsx</a></li>
+<li><a href="#" onclick="url('Lesson 6.dtsx.html')"  alt="c:\Work\ssis\Samples2012\doc\Lesson 6.dtsx.html">Lesson 6.dtsx</a></li>
+<li><a href="https://ssisdocumenter.com/register.aspx" target="_blank">Register</a></li>
+
+</ul>
+</div>
+</td>
+<td style="width:100%">
+<iframe frameBorder=0 marginHeight=0 marginWidth=0 
+src="" width="100%" height="100%"id="cframe"></iframe>
+</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
+
+
+
+

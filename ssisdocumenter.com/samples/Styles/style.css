@@ -1,0 +1,279 @@
+BODY {
+	scrollbar-face-color:#D8D8D8;
+	scrollbar-highlight-color:#E6E6E6;
+	scrollbar-3dlight-color:#C0C0C0;
+	scrollbar-darkshadow-color:#8B8B8B;
+	scrollbar-shadow-color:#A7A7A7;
+	scrollbar-arrow-color:#335271;
+	scrollbar-track-color:#C8C8C8;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: #ffffff; 
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 70%;
+	width: 100%;            
+}
+
+.head{
+	align: left;
+	margin: 0px 0px 0px 0px;
+	padding: 2px 0px 0px 4px;
+	vertical-align: middle;
+	font-weight: normal;
+	background: transparent; 
+}
+
+.button{
+	width: 10px;
+	cursor: hand;
+	background: transparent; 
+}
+
+div#header{
+	background-color: #B1CB9A;
+}
+div#main{
+	width:800px;
+	background-color:white;
+	padding:5px;
+}
+
+.smallhead{
+	align: left;
+	margin: 0px 0px 0px 0px;
+	padding: 2px 0px 0px 4px;
+	vertical-align: middle;
+	font-weight: normal;
+	font-size: 80%;
+	font-style: italic;
+	background: transparent; 
+}
+
+.code{
+	font-size : 10pt;
+	font-weight: normal;
+	font-family :"Courier New";
+	color :#3333FF;
+	background-color:#fcfcee;
+	max-width:700px;
+	width:700px;
+}
+
+table.list{
+	width: 700px; 
+	max-width: 700px;
+	margin-top: .6em;
+	margin-bottom: .3em;
+	margin-left: 1em;	
+	border: 1px solid #999999;
+	background:white;
+	font-size: 100%;
+
+}
+
+table.innerlist{
+	width: 98%; 
+	margin: 5;
+	border-width: 1px;
+	border-style: inset;
+	border-color: #aaaaaa;
+	background:white;
+	font-size: 100%;
+}
+table.container{
+	margin: 2;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #aaa;
+	background-color:InfoBackground;
+	font-size: 80%;
+}
+table.container tr th
+{
+	background-color:white;
+	border:solid 1px #777;
+}
+
+.rowstyle
+{
+	background:#f4f4f4;
+	border-width: 0px 1px 1px 0px;
+}
+
+.altrowstyle
+{
+	background:#dbdcdb;
+}
+
+
+th{
+	background: #cccccc; 
+	border-width: 0px 1px 1px 0px;
+	border-style: groove;
+	border-color: #999999;
+	padding: 4px 4px;
+	text-align: left;
+	vertical-align: top;
+	font-size: 100%;
+}
+td{
+	background:"White"; 
+	font-size: 100%;
+	vertical-align: top;
+
+}
+
+td.Label{
+	font-family :"Arial";
+	font-weight:bold;
+	font-size: 100%; 
+	width:150px;
+	border-bottom: 1px solid #EEEEEE;
+	border-left: 1px solid #EEEEEE;
+}
+td.Value{
+	font-family :"Courier New";
+	max-width:650px;
+	border-bottom: 1px solid #EEEEEE;
+	border-left: 1px solid #EEEEEE;
+	
+}
+div.Value
+{
+	max-width:650px;
+	overflow:auto;
+	white-space:pre-wrap;
+}
+
+td.greenhead{
+	font-family :"Courier New";
+	border:0px;
+	text-align: left;
+	margin: 0px 0px 0px 0px;
+	padding: 2px 0px 0px 4px;
+	vertical-align: middle;
+	font-weight: normal;
+	font-size: 80%;
+	font-style: italic;
+	background: transparent; 
+}
+
+
+h1, h2, h3, h4
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom: .4em; 
+	margin-left: 1em;
+	}
+h1
+	{
+	font-size: 130%;
+	margin-top: 0em;
+	font-weight: bold;
+	}
+h2
+	{
+	font-size: 120%;
+	font-weight: bold;
+	}
+h3
+	{
+	font-size: 90%;
+	font-style: italic;
+	}
+h4
+	{
+	font-size: 80%;
+	text-align: left;
+	margin-left: 0.3em;
+	}
+h5
+	{
+	font-size: 80%;
+	text-align: left;
+	margin-left: 0.3em;
+	font-style: italic;
+	}
+li.success
+{
+	list-style-image: url(../images/success.png);
+	margin-left:-30px;
+}
+
+li.error
+{
+	list-style-image: url(../images/error.png);
+	margin-left:-30px;
+}
+
+li.complete
+{
+	list-style-image: url(../images/complete.png);
+	margin-left:-30px;
+}
+
+div.diagram
+{
+	background-color:InfoBackground;
+	border:solid 1px #777;
+	padding:10px;	
+}
+div.box
+{
+	background-color:White;
+	border:1px solid #333;
+	width:200px;
+	margin:2px;	
+	padding:2px;
+	display:block;
+}
+div.box img
+{
+	vertical-align:middle;
+}
+.property
+{
+
+}
+.hide
+{
+	display:none;	
+}
+
+.show
+{
+	/*display:inherit;	*/
+}
+
+div.annotation
+{
+	margin:15px;
+	background-color:#FFFED4;
+}
+
+p.annotation
+{
+	padding:10px;
+	font-style:italic;
+	color:Navy;
+}
+div.contents
+{
+	padding:10px;
+	font:small;
+	background-color:#DFEDE6;
+	height:100%;
+}
+table.contents
+{
+	height:100%;
+	width:100%;
+	border:2px solid #eee;
+}
+td.contents
+{
+	height:100%;
+	width:20%;
+	border:2px solid #cdd;
+}

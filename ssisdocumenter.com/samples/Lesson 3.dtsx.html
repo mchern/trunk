@@ -1,0 +1,1139 @@
+﻿<html xmlns:DTS="www.microsoft.com/SqlServer/Dts" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" xmlns:SendMailTask="www.microsoft.com/SqlServer/SendMailTask" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" xmlns:wi="wi:Utils">
+  <head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <LINK REL="STYLESHEET" TYPE="text/css" HREF="Styles/style.css" title="Style">
+    <LINK REL="STYLESHEET" TYPE="text/css" HREF="Styles/SyntaxHighlighter.css" title="Style">
+    <title>SSIS Documentation</title>
+  </head>
+  <body><script type="text/javascript" language="javascript" src="Scripts/jquery.js"> </script><script type="text/javascript" language="javascript" src="Scripts/utils.js"> </script><script type="text/javascript" language="javascript" src="Scripts/shCore.js"> </script><script type="text/javascript" language="javascript" src="Scripts/shBrushVb.js"> </script><script type="text/javascript" language="javascript" src="Scripts/shBrushSql.js"> </script><script type="text/javascript" language="javascript" src="Scripts/shBrushXml.js"> </script><div id="header">
+      <table CellSpacing="0">
+        <tr>
+          <td class="greenhead">SSIS Documentation</td>
+        </tr>
+      </table>
+    </div>
+    <div id="main">
+      <h2>Generated with Demo Version of SSIS Documenter. Please Register.<a href="https://ssisdocumenter.com/">http://www.ssisdocumenter.com/</a></h2>
+      <h2>Contents</h2>
+      <ul>
+        <li><img width="30px" alt="SSIS.Package.3" src="images/package.gif"><a href="#{9341BD50-B186-4110-912A-DDF71A206CC3}">Lesson 3</a><ul>
+            <li><img width="30px" alt="STOCK:FOREACHLOOP" src="images/containerforeachloop.gif"><a href="#{3C0E2191-1511-41C6-9005-D7A1298D7373}">Foreach File in Folder</a><ul>
+                <li><img width="30px" alt="SSIS.Pipeline.3" src="images/taskdataflow.gif"><a href="#{1F832EF1-F5D9-4CA7-9CFE-A4A21D8C1485}">Extract Sample Currency Data</a><ul>
+                    <li>Components
+					<ul>
+                        <li><img width="30px" alt="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1" src="images/taskfilesystem.gif"><a href="#">Extract Sample Currency Data</a></li>
+                        <li><img width="30px" alt="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6" src="images/taskfilesystem.gif"><a href="#">Lookup Currency Key</a></li>
+                        <li><img width="30px" alt="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6" src="images/taskfilesystem.gif"><a href="#">Lookup Date Key</a></li>
+                        <li><img width="30px" alt="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4" src="images/taskfilesystem.gif"><a href="#">Sample OLE DB Destination</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <h3>Level of Details</h3><input type="radio" Value="0" id="levelOptimal" name="level" onClick="SwitchStyle('property', 'show', 'hide');"><label for="levelOptimal">Brief</label><input type="radio" Value="0" id="levelVerbose" name="level" checked onClick="SwitchStyle('property', 'hide', 'show');"><label for="levelVerbose">Verbose</label><a name="{9341BD50-B186-4110-912A-DDF71A206CC3}"></a><table CellSpacing="0">
+        <tr>
+          <td valign="middle"><img width="30px" alt="SSIS.Package.3" src="images/package.gif"></td>
+          <td valign="middle">
+            <h3>Lesson 3</h3>
+          </td>
+          <td valign="middle"></td>
+        </tr>
+      </table>
+      <table class="list" CellSpacing="0">
+        <tr>
+          <th width="100px">Property</th>
+          <th>Value</th>
+        </tr>
+        <tr class="property altrowstyle">
+          <td class="Label">PackageFormatVersion</td>
+          <td class="Value">6&nbsp;							
+							</td>
+        </tr>
+        <tr class="property">
+          <td class="Label">refId</td>
+          <td class="Value">Package</td>
+        </tr>
+        <tr class="property">
+          <td class="Label">ExecutableType</td>
+          <td class="Value">SSIS.Package.3</td>
+        </tr>
+        <tr class="property">
+          <td class="Label">CreatorName</td>
+          <td class="Value">REDWOOD\Barry</td>
+        </tr>
+        <tr class="property">
+          <td class="Label">CreatorComputerName</td>
+          <td class="Value">REDWOOD</td>
+        </tr>
+        <tr class="property">
+          <td class="Label">CreationDate</td>
+          <td class="Value">6/9/2012 4:03:57 PM</td>
+        </tr>
+        <tr class="property">
+          <td class="Label">PackageType</td>
+          <td class="Value">5</td>
+        </tr>
+        <tr class="property">
+          <td class="Label">VersionBuild</td>
+          <td class="Value">6</td>
+        </tr>
+        <tr class="property">
+          <td class="Label">VersionGUID</td>
+          <td class="Value">{5932509D-B45B-464C-AD55-6C9124E7B222}</td>
+        </tr>
+        <tr class="property">
+          <td class="Label">LastModifiedProductVersion</td>
+          <td class="Value">11.0.2100.60</td>
+        </tr>
+        <tr class="property">
+          <td class="Label">LocaleID</td>
+          <td class="Value">1033</td>
+        </tr>
+        <tr class="property">
+          <td class="Label">ObjectName</td>
+          <td class="Value">Lesson 3</td>
+        </tr>
+        <tr class="property">
+          <td class="Label">DTSID</td>
+          <td class="Value">{9341BD50-B186-4110-912A-DDF71A206CC3}</td>
+        </tr>
+        <tr class="property">
+          <td class="Label">CreationName</td>
+          <td class="Value">SSIS.Package.3</td>
+        </tr>
+      </table>
+      <h3><img src="Images\srcoledb.gif" alt="Connections">Connections</h3>
+      <ul>
+        <li><a href="#{83AC9094-F76D-4D56-AE6B-022A8DD80C23}"></a><a name="{83AC9094-F76D-4D56-AE6B-022A8DD80C23}"></a>OLEDB: localhost.AdventureWorksDW2012<table class="list" CellSpacing="0">
+            <tr>
+              <th width="100px">Property</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td class="Label">ConnectionString</td>
+              <td class="Value">Data Source=localhost;Initial Catalog=AdventureWorksDW2012;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</td>
+            </tr>
+          </table>
+        </li>
+        <li><a href="#{B2D70645-61A0-4B43-9769-516085699D96}"></a><a name="{B2D70645-61A0-4B43-9769-516085699D96}"></a>FLATFILE: Sample Flat File Source Data<table class="list" CellSpacing="0">
+            <tr>
+              <th width="100px">Property</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td class="Label">Format</td>
+              <td class="Value">Delimited</td>
+            </tr>
+            <tr>
+              <td class="Label">LocaleID</td>
+              <td class="Value">1033</td>
+            </tr>
+            <tr>
+              <td class="Label">HeaderRowDelimiter</td>
+              <td class="Value">_x000D__x000A_</td>
+            </tr>
+            <tr>
+              <td class="Label">RowDelimiter</td>
+              <td class="Value">
+              </td>
+            </tr>
+            <tr>
+              <td class="Label">TextQualifier</td>
+              <td class="Value">_x003C_none_x003E_</td>
+            </tr>
+            <tr>
+              <td class="Label">CodePage</td>
+              <td class="Value">1252</td>
+            </tr>
+          </table>
+        </li>
+        <li><a href="#{2E608717-F461-4356-A50A-F502410787F4}"></a><a name="{2E608717-F461-4356-A50A-F502410787F4}"></a>FILE: TutorialLog.log<table class="list" CellSpacing="0">
+            <tr>
+              <th width="100px">Property</th>
+              <th>Value</th>
+            </tr>
+            <tr>
+              <td class="Label">FileUsageType</td>
+              <td class="Value">1</td>
+            </tr>
+            <tr>
+              <td class="Label">ConnectionString</td>
+              <td class="Value">C:\Development\SQL Projects\1.SSIS Tutorial\Logs\TutorialLog.log</td>
+            </tr>
+          </table>
+        </li>
+      </ul>
+      <table class="list"></table><a name="{3C0E2191-1511-41C6-9005-D7A1298D7373}"></a><table CellSpacing="0">
+        <tr>
+          <td valign="middle"><img width="30px" alt="STOCK:FOREACHLOOP" src="images/containerforeachloop.gif"></td>
+          <td valign="middle">
+            <h3>Foreach File in Folder</h3>
+          </td>
+          <td valign="middle"></td>
+        </tr>
+      </table>
+      <table class="list" CellSpacing="0">
+        <tr>
+          <th width="100px">Property</th>
+          <th>Value</th>
+        </tr>
+        <tr>
+          <td class="Value">Folder</td>
+          <td class="Value">C:\Program Files\Microsoft SQL Server\110\Samples\Integration Services\Tutorial\Creating a Simple ETL Package\Sample Data</td>
+        </tr>
+        <tr>
+          <td class="Value">File Mask</td>
+          <td class="Value">Currency_*.txt</td>
+        </tr>
+      </table>
+      <table class="list"></table><a name="{1F832EF1-F5D9-4CA7-9CFE-A4A21D8C1485}"></a><table CellSpacing="0">
+        <tr>
+          <td valign="middle"><img width="30px" alt="SSIS.Pipeline.3" src="images/taskdataflow.gif"></td>
+          <td valign="middle">
+            <h3>Extract Sample Currency Data</h3>
+          </td>
+          <td valign="middle"></td>
+        </tr>
+      </table>
+      <table class="list" CellSpacing="0">
+        <tr>
+          <th width="100px">Property</th>
+          <th>Value</th>
+        </tr>
+        <tr class="property">
+          <td class="Label">refId</td>
+          <td class="Value">Package\Foreach File in Folder\Extract Sample Currency Data</td>
+        </tr>
+        <tr class="property">
+          <td class="Label">ExecutableType</td>
+          <td class="Value">SSIS.Pipeline.3</td>
+        </tr>
+        <tr class="property">
+          <td class="Label">TaskContact</td>
+          <td class="Value">Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1</td>
+        </tr>
+        <tr class="property">
+          <td class="Label">LocaleID</td>
+          <td class="Value">-1</td>
+        </tr>
+        <tr class="property">
+          <td class="Label">ObjectName</td>
+          <td class="Value">Extract Sample Currency Data</td>
+        </tr>
+        <tr class="property">
+          <td class="Label">DTSID</td>
+          <td class="Value">{1F832EF1-F5D9-4CA7-9CFE-A4A21D8C1485}</td>
+        </tr>
+        <tr class="property">
+          <td class="Label">Description</td>
+          <td class="Value">Data Flow Task</td>
+        </tr>
+        <tr class="property">
+          <td class="Label">CreationName</td>
+          <td class="Value">SSIS.Pipeline.3</td>
+        </tr>
+        <tr class="property">
+          <th colspan="2">
+								Logging Options
+					</th>
+        </tr>
+        <tr>
+          <th colspan="2">
+								Object Data
+					</th>
+        </tr>
+        <tr>
+          <td class="Label">version</td>
+          <td class="Value">1&nbsp;
+										</td>
+        </tr>
+      </table>
+      <table class="list">
+              
+                <tr>
+          <td colspan="2"><a name=""></a><h4><img width="30px" alt="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1" src="images/taskfilesystem.gif">
+				Component: Extract Sample Currency Data<i>(Flat File Source)</i></h4>
+            <table class="innerlist">
+              <tr class="property">
+                <td class="Label"><span title="System.Boolean, Specifies whether zero-length columns are treated as null.">RetainNulls</span></td>
+                <td class="Value">
+                  <div class="Value">false&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.String, Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated.">FileNameColumnName</span></td>
+                <td class="Value">
+                  <div class="Value">
+                    &nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr>
+                <th colspan="2">Connections </th>
+              </tr>
+              <tr>
+                <td class="Label"><span title=", ">FlatFileConnection</span></td>
+                <td class="Value"></td>
+              </tr>
+              <tr>
+                <th colspan="2">Outputs</th>
+              </tr>
+              <tr>
+                <td colspan="2" class="Label">Flat File Source Output</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <table class="innerlist" CellSpacing="0">
+                    <tr>
+                      <th>Name</th>
+                      <th>Description</th>
+                      <th>Type</th>
+                      <th> Length</th>
+                      <th>Precision</th>
+                      <th>Scale</th>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">AverageRate</td>
+                      <td class="Value">&nbsp;</td>
+                      <td class="Value" width="15%">r4</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">CurrencyID</td>
+                      <td class="Value">&nbsp;</td>
+                      <td class="Value" width="15%">wstr</td>
+                      <td class="Value" width="5%">3</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">CurrencyDate</td>
+                      <td class="Value">&nbsp;</td>
+                      <td class="Value" width="15%">dbDate</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">EndOfDayRate</td>
+                      <td class="Value">&nbsp;</td>
+                      <td class="Value" width="15%">r4</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" class="Label">Flat File Source Error Output</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <table class="innerlist" CellSpacing="0">
+                    <tr>
+                      <th>Name</th>
+                      <th>Description</th>
+                      <th>Type</th>
+                      <th> Length</th>
+                      <th>Precision</th>
+                      <th>Scale</th>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">Flat File Source Error Output Column</td>
+                      <td class="Value">Flat File Source Error Output Column&nbsp;</td>
+                      <td class="Value" width="15%">text</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">ErrorCode</td>
+                      <td class="Value">&nbsp;</td>
+                      <td class="Value" width="15%">i4</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">ErrorColumn</td>
+                      <td class="Value">&nbsp;</td>
+                      <td class="Value" width="15%">i4</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+                <tr>
+          <td colspan="2"><a name=""></a><h4><img width="30px" alt="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6" src="images/taskfilesystem.gif">
+				Component: Lookup Currency Key<i>(Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory.)</i></h4>
+            <table class="innerlist">
+              <tr>
+                <td colspan="2">
+                  <h4>SqlCommand</h4>
+                  <div class="Code"><textarea name="code" class="sql" rows="15" cols="60">select * from (select * from [dbo].[DimCurrency]) as refTable
+where [refTable].[CurrencyAlternateKey] = 'ARS'
+OR
+[refTable].[CurrencyAlternateKey] = 'AUD'
+OR
+[refTable].[CurrencyAlternateKey] = 'BRL'
+OR
+[refTable].[CurrencyAlternateKey] = 'CAD'
+OR
+[refTable].[CurrencyAlternateKey] = 'CNY'
+OR
+[refTable].[CurrencyAlternateKey] = 'DEM'
+OR
+[refTable].[CurrencyAlternateKey] = 'EUR'
+OR
+[refTable].[CurrencyAlternateKey] = 'FRF'
+OR
+[refTable].[CurrencyAlternateKey] = 'GBP'
+OR
+[refTable].[CurrencyAlternateKey] = 'JPY'
+OR
+[refTable].[CurrencyAlternateKey] = 'MXN'
+OR
+[refTable].[CurrencyAlternateKey] = 'SAR'
+OR
+[refTable].[CurrencyAlternateKey] = 'USD'
+OR
+[refTable].[CurrencyAlternateKey] = 'VEB'</textarea></div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <h4>SqlCommandParam</h4>
+                  <div class="Code"><textarea name="code" class="sql" rows="15" cols="60">select * from (select * from (select * from [dbo].[DimCurrency]) as refTable
+where [refTable].[CurrencyAlternateKey] = 'ARS'
+OR
+[refTable].[CurrencyAlternateKey] = 'AUD'
+OR
+[refTable].[CurrencyAlternateKey] = 'BRL'
+OR
+[refTable].[CurrencyAlternateKey] = 'CAD'
+OR
+[refTable].[CurrencyAlternateKey] = 'CNY'
+OR
+[refTable].[CurrencyAlternateKey] = 'DEM'
+OR
+[refTable].[CurrencyAlternateKey] = 'EUR'
+OR
+[refTable].[CurrencyAlternateKey] = 'FRF'
+OR
+[refTable].[CurrencyAlternateKey] = 'GBP'
+OR
+[refTable].[CurrencyAlternateKey] = 'JPY'
+OR
+[refTable].[CurrencyAlternateKey] = 'MXN'
+OR
+[refTable].[CurrencyAlternateKey] = 'SAR'
+OR
+[refTable].[CurrencyAlternateKey] = 'USD'
+OR
+[refTable].[CurrencyAlternateKey] = 'VEB') [refTable]
+where [refTable].[CurrencyAlternateKey] = ?</textarea></div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Int32, Specifies the type of connection used to access the reference dataset.">ConnectionType</span></td>
+                <td class="Value">
+                  <div class="Value">0&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Int32, Specifies the cache type of the lookup table.">CacheType</span></td>
+                <td class="Value">
+                  <div class="Value">0&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Int32, Specifies how the Lookup transformation handles rows without matching entries in the reference data set.">NoMatchBehavior</span></td>
+                <td class="Value">
+                  <div class="Value">0&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Int32, Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset.">NoMatchCachePercentage</span></td>
+                <td class="Value">
+                  <div class="Value">0&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Int32, Maximum Memory Usage for Reference Cache on a 32 bit platform.">MaxMemoryUsage</span></td>
+                <td class="Value">
+                  <div class="Value">25&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Int64, Maximum Memory Usage for Reference Cache on a 64 bit platform.">MaxMemoryUsage64</span></td>
+                <td class="Value">
+                  <div class="Value">25&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <h4>ReferenceMetadataXml</h4>
+                  <div class="Code"><textarea name="code" class="xml" rows="15" cols="60">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="CurrencyKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CurrencyAlternateKey" dataType="DT_WSTR" length="3" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CurrencyName" dataType="DT_WSTR" length="50" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</textarea></div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.String, Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons.">ParameterMap</span></td>
+                <td class="Value">
+                  <div class="Value">#{Package\Foreach File in Folder\Extract Sample Currency Data\Extract Sample Currency Data.Outputs[Flat File Source Output].Columns[CurrencyID]};&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Int32, Specifies the column code page to use when code page information is unavailable from the data source.">DefaultCodePage</span></td>
+                <td class="Value">
+                  <div class="Value">1252&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Boolean, Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used.">TreatDuplicateKeysAsError</span></td>
+                <td class="Value">
+                  <div class="Value">false&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr>
+                <th colspan="2">Connections </th>
+              </tr>
+              <tr>
+                <td class="Label"><span title=", Connection manager used to access lookup data.">OleDbConnection</span></td>
+                <td class="Value"></td>
+              </tr>
+              <tr>
+                <th colspan="2">Inputs</th>
+              </tr>
+              <tr>
+                <td colspan="2" class="Label">Lookup Input</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <table class="innerlist" CellSpacing="0">
+                    <tr>
+                      <th>Name</th>
+                      <th>Description</th>
+                      <th>Type</th>
+                      <th>Length</th>
+                      <th>Precision</th>
+                      <th>Scale</th>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <h5><img src="images/transderivedcolumn.gif" alt="Input Mappings">
+					Input Mappings</h5>
+                  <table class="innerlist">
+                    <tr>
+                      <th colspan="2">Column From</th>
+                      <th>Column To</th>
+                    </tr>
+                    <tr>
+                      <td><img src="images/property.gif" alt="Input Property">Flat File Source Output-&gt;
+										CurrencyID</td>
+                      <td><img src="images/map.gif" alt="Field Map"></td>
+                      <td><img src="images/property.gif" alt="Output Property"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <th colspan="2">Outputs</th>
+              </tr>
+              <tr>
+                <td colspan="2" class="Label">Lookup Match Output</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <table class="innerlist" CellSpacing="0">
+                    <tr>
+                      <th>Name</th>
+                      <th>Description</th>
+                      <th>Type</th>
+                      <th> Length</th>
+                      <th>Precision</th>
+                      <th>Scale</th>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">CurrencyKey</td>
+                      <td class="Value">&nbsp;</td>
+                      <td class="Value" width="15%">i4</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" class="Label">Lookup No Match Output<br><i>The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to "Send rows with no matching entries to the no match output."</i></td>
+              </tr>
+              <tr>
+                <td colspan="2" class="Label">Lookup Error Output</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <table class="innerlist" CellSpacing="0">
+                    <tr>
+                      <th>Name</th>
+                      <th>Description</th>
+                      <th>Type</th>
+                      <th> Length</th>
+                      <th>Precision</th>
+                      <th>Scale</th>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">ErrorCode</td>
+                      <td class="Value">&nbsp;</td>
+                      <td class="Value" width="15%">i4</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">ErrorColumn</td>
+                      <td class="Value">&nbsp;</td>
+                      <td class="Value" width="15%">i4</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+                <tr>
+          <td colspan="2"><a name=""></a><h4><img width="30px" alt="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6" src="images/taskfilesystem.gif">
+				Component: Lookup Date Key<i>(Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory.)</i></h4>
+            <table class="innerlist">
+              <tr>
+                <td colspan="2">
+                  <h4>SqlCommand</h4>
+                  <div class="Code"><textarea name="code" class="sql" rows="15" cols="60">select * from [dbo].[DimDate]</textarea></div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <h4>SqlCommandParam</h4>
+                  <div class="Code"><textarea name="code" class="sql" rows="15" cols="60">select * from (select * from [dbo].[DimDate]) [refTable]
+where [refTable].[FullDateAlternateKey] = ?</textarea></div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Int32, Specifies the type of connection used to access the reference dataset.">ConnectionType</span></td>
+                <td class="Value">
+                  <div class="Value">0&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Int32, Specifies the cache type of the lookup table.">CacheType</span></td>
+                <td class="Value">
+                  <div class="Value">1&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Int32, Specifies how the Lookup transformation handles rows without matching entries in the reference data set.">NoMatchBehavior</span></td>
+                <td class="Value">
+                  <div class="Value">0&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Int32, Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset.">NoMatchCachePercentage</span></td>
+                <td class="Value">
+                  <div class="Value">0&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Int32, Maximum Memory Usage for Reference Cache on a 32 bit platform.">MaxMemoryUsage</span></td>
+                <td class="Value">
+                  <div class="Value">25&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Int64, Maximum Memory Usage for Reference Cache on a 64 bit platform.">MaxMemoryUsage64</span></td>
+                <td class="Value">
+                  <div class="Value">25&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <h4>ReferenceMetadataXml</h4>
+                  <div class="Code"><textarea name="code" class="xml" rows="15" cols="60">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="DateKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FullDateAlternateKey" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DayNumberOfWeek" dataType="DT_UI1" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EnglishDayNameOfWeek" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SpanishDayNameOfWeek" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FrenchDayNameOfWeek" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DayNumberOfMonth" dataType="DT_UI1" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="DayNumberOfYear" dataType="DT_I2" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="WeekNumberOfYear" dataType="DT_UI1" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EnglishMonthName" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="SpanishMonthName" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FrenchMonthName" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="MonthNumberOfYear" dataType="DT_UI1" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CalendarQuarter" dataType="DT_UI1" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CalendarYear" dataType="DT_I2" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="CalendarSemester" dataType="DT_UI1" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FiscalQuarter" dataType="DT_UI1" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FiscalYear" dataType="DT_I2" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="FiscalSemester" dataType="DT_UI1" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</textarea></div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.String, Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons.">ParameterMap</span></td>
+                <td class="Value">
+                  <div class="Value">#{Package\Foreach File in Folder\Extract Sample Currency Data\Extract Sample Currency Data.Outputs[Flat File Source Output].Columns[CurrencyDate]};&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Int32, Specifies the column code page to use when code page information is unavailable from the data source.">DefaultCodePage</span></td>
+                <td class="Value">
+                  <div class="Value">1252&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Boolean, Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used.">TreatDuplicateKeysAsError</span></td>
+                <td class="Value">
+                  <div class="Value">false&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr>
+                <th colspan="2">Connections </th>
+              </tr>
+              <tr>
+                <td class="Label"><span title=", Connection manager used to access lookup data.">OleDbConnection</span></td>
+                <td class="Value"></td>
+              </tr>
+              <tr>
+                <th colspan="2">Inputs</th>
+              </tr>
+              <tr>
+                <td colspan="2" class="Label">Lookup Input</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <table class="innerlist" CellSpacing="0">
+                    <tr>
+                      <th>Name</th>
+                      <th>Description</th>
+                      <th>Type</th>
+                      <th>Length</th>
+                      <th>Precision</th>
+                      <th>Scale</th>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <h5><img src="images/transderivedcolumn.gif" alt="Input Mappings">
+					Input Mappings</h5>
+                  <table class="innerlist">
+                    <tr>
+                      <th colspan="2">Column From</th>
+                      <th>Column To</th>
+                    </tr>
+                    <tr>
+                      <td><img src="images/property.gif" alt="Input Property">Flat File Source Output-&gt;
+										CurrencyDate</td>
+                      <td><img src="images/map.gif" alt="Field Map"></td>
+                      <td><img src="images/property.gif" alt="Output Property"></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <th colspan="2">Outputs</th>
+              </tr>
+              <tr>
+                <td colspan="2" class="Label">Lookup Match Output</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <table class="innerlist" CellSpacing="0">
+                    <tr>
+                      <th>Name</th>
+                      <th>Description</th>
+                      <th>Type</th>
+                      <th> Length</th>
+                      <th>Precision</th>
+                      <th>Scale</th>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">DateKey</td>
+                      <td class="Value">&nbsp;</td>
+                      <td class="Value" width="15%">i4</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" class="Label">Lookup No Match Output<br><i>The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to "Send rows with no matching entries to the no match output."</i></td>
+              </tr>
+              <tr>
+                <td colspan="2" class="Label">Lookup Error Output</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <table class="innerlist" CellSpacing="0">
+                    <tr>
+                      <th>Name</th>
+                      <th>Description</th>
+                      <th>Type</th>
+                      <th> Length</th>
+                      <th>Precision</th>
+                      <th>Scale</th>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">ErrorCode</td>
+                      <td class="Value">&nbsp;</td>
+                      <td class="Value" width="15%">i4</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">ErrorColumn</td>
+                      <td class="Value">&nbsp;</td>
+                      <td class="Value" width="15%">i4</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+                <tr>
+          <td colspan="2"><a name=""></a><h4><img width="30px" alt="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4" src="images/taskfilesystem.gif">
+				Component: Sample OLE DB Destination<i>(OLE DB Destination)</i></h4>
+            <table class="innerlist">
+              <tr class="property">
+                <td class="Label"><span title="System.Int32, The number of seconds before a command times out.  A value of 0 indicates an infinite time-out.">CommandTimeout</span></td>
+                <td class="Value">
+                  <div class="Value">0&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.String, Specifies the name of the database object used to open a rowset.">OpenRowset</span></td>
+                <td class="Value">
+                  <div class="Value">[dbo].[FactCurrency]&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.String, Specifies the variable that contains the name of the database object used to open a rowset.">OpenRowsetVariable</span></td>
+                <td class="Value">
+                  <div class="Value">
+                    &nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <h4>SqlCommand</h4>
+                  <div class="Code"><textarea name="code" class="sql" rows="15" cols="60">
+                    </textarea></div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Int32, Specifies the column code page to use when code page information is unavailable from the data source.">DefaultCodePage</span></td>
+                <td class="Value">
+                  <div class="Value">1252&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Boolean, Forces the use of the DefaultCodePage property value when describing character data.">AlwaysUseDefaultCodePage</span></td>
+                <td class="Value">
+                  <div class="Value">false&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Int32, Specifies the mode used to access the database.">AccessMode</span></td>
+                <td class="Value">
+                  <div class="Value">3&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Boolean, Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on.">FastLoadKeepIdentity</span></td>
+                <td class="Value">
+                  <div class="Value">false&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Boolean, Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on.">FastLoadKeepNulls</span></td>
+                <td class="Value">
+                  <div class="Value">false&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.String, Specifies options to be used with fast load.  Applies only if fast load is turned on.">FastLoadOptions</span></td>
+                <td class="Value">
+                  <div class="Value">TABLOCK,  CHECK_CONSTRAINTS&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr class="property">
+                <td class="Label"><span title="System.Int32, Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on.">FastLoadMaxInsertCommitSize</span></td>
+                <td class="Value">
+                  <div class="Value">2147483647&nbsp;
+            </div>
+                </td>
+              </tr>
+              <tr>
+                <th colspan="2">Connections </th>
+              </tr>
+              <tr>
+                <td class="Label"><span title=", The OLE DB runtime connection used to access the database.">OleDbConnection</span></td>
+                <td class="Value"></td>
+              </tr>
+              <tr>
+                <th colspan="2">Inputs</th>
+              </tr>
+              <tr>
+                <td colspan="2" class="Label">OLE DB Destination Input</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <table class="innerlist" CellSpacing="0">
+                    <tr>
+                      <th>Name</th>
+                      <th>Description</th>
+                      <th>Type</th>
+                      <th>Length</th>
+                      <th>Precision</th>
+                      <th>Scale</th>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">CurrencyKey</td>
+                      <td class="Value">&nbsp;
+									</td>
+                      <td class="Value" width="15%">i4</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">DateKey</td>
+                      <td class="Value">&nbsp;
+									</td>
+                      <td class="Value" width="15%">i4</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">AverageRate</td>
+                      <td class="Value">&nbsp;
+									</td>
+                      <td class="Value" width="15%">r4</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">EndOfDayRate</td>
+                      <td class="Value">&nbsp;
+									</td>
+                      <td class="Value" width="15%">r4</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">CurrencyID</td>
+                      <td class="Value">&nbsp;
+									</td>
+                      <td class="Value" width="15%">wstr</td>
+                      <td class="Value" width="5%">3</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">CurrencyDate</td>
+                      <td class="Value">&nbsp;
+									</td>
+                      <td class="Value" width="15%">dbDate</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <h5><img src="images/transderivedcolumn.gif" alt="Input Mappings">
+					Input Mappings</h5>
+                  <table class="innerlist">
+                    <tr>
+                      <th colspan="2">Column From</th>
+                      <th>Column To</th>
+                    </tr>
+                    <tr>
+                      <td><img src="images/property.gif" alt="Input Property">Flat File Source Output-&gt;
+										AverageRate</td>
+                      <td><img src="images/map.gif" alt="Field Map"></td>
+                      <td><img src="images/property.gif" alt="Output Property">AverageRate</td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/property.gif" alt="Input Property">Flat File Source Output-&gt;
+										EndOfDayRate</td>
+                      <td><img src="images/map.gif" alt="Field Map"></td>
+                      <td><img src="images/property.gif" alt="Output Property">EndOfDayRate</td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/property.gif" alt="Input Property">Lookup Match Output-&gt;
+										CurrencyKey</td>
+                      <td><img src="images/map.gif" alt="Field Map"></td>
+                      <td><img src="images/property.gif" alt="Output Property">CurrencyKey</td>
+                    </tr>
+                    <tr>
+                      <td><img src="images/property.gif" alt="Input Property">Lookup Match Output-&gt;
+										DateKey</td>
+                      <td><img src="images/map.gif" alt="Field Map"></td>
+                      <td><img src="images/property.gif" alt="Output Property">DateKey</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <th colspan="2">Outputs</th>
+              </tr>
+              <tr>
+                <td colspan="2" class="Label">OLE DB Destination Error Output</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <table class="innerlist" CellSpacing="0">
+                    <tr>
+                      <th>Name</th>
+                      <th>Description</th>
+                      <th>Type</th>
+                      <th> Length</th>
+                      <th>Precision</th>
+                      <th>Scale</th>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">ErrorCode</td>
+                      <td class="Value">&nbsp;</td>
+                      <td class="Value" width="15%">i4</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="Value" width="25%">ErrorColumn</td>
+                      <td class="Value">&nbsp;</td>
+                      <td class="Value" width="15%">i4</td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                      <td class="Value" width="5%">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+              
+              
+                
+                
+                
+              
+            </table>
+    </div><script type="text/javascript" language="javascript">
+			dp.SyntaxHighlighter.HighlightAll('code');
+	    </script><h2>Generated with Demo Version of SSIS Documenter. Please Register.<a href="https://ssisdocumenter.com/">http://www.ssisdocumenter.com/</a></h2>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TransactionRequest
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FirstName>Deborah</FirstName>
+  <LastName>Harkey</LastName>
+  <Address>wer</Address>
+  <City>wer</City>
+  <State>wer</State>
+  <Country>US</Country>
+  <Company>wer</Company>
+  <Email>christopher.haigood@mckesson.com</Email>
+  <Phone>wer</Phone>
+  <ProductName>SSIS Documenter 2008</ProductName>
+  <ShippingFirstName>wer</ShippingFirstName>
+  <ShippingLastName>wer</ShippingLastName>
+  <ShippingCompany />
+  <ShippingAddress />
+  <ShippingCity />
+  <ShippingState />
+  <ShippingCountry>US</ShippingCountry>
+  <ShippingZip />
+  <ExpirationYear>08</ExpirationYear>
+  <ExpirationMonth>10</ExpirationMonth>
+  <SameShipping>false</SameShipping>
+  <ChargeAmount>0</ChargeAmount>
+  <NumberOflicenses>0</NumberOflicenses>
+  <Zip>34443</Zip>
+  <CardType>visa</CardType>
+  <SecurityCode>234</SecurityCode>
+  <CardNumber>111111111111111</CardNumber>
+  <ExpDate>10/08</ExpDate>
+</TransactionRequest>
